@@ -42,10 +42,6 @@
 
 <br><br>
 
-<!-- GitHub Stats and Top Langs -->
-![YeopSeung's GitHub stats](https://github-readme-stats.vercel.app/api?username=YeopSeung04&bg_color=008d62&title_color=00b07b&icon_color=ffd700&text_color=ffffff&border_color=00b07b&theme=radical)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=YeopSeung04&count_private=true&show_icons=true&hide_border=true&bg_color=008d62&title_color=00b07b&icon_color=ffd700&text_color=ffffff&border_color=00b07b)](https://github.com/Yeopseung04)
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=008d62&height=100&section=footer"/>
 </div>
 
