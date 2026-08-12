@@ -1,0 +1,32 @@
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    # 03:00 KST == 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add profile-3d-contrib
+          if git diff --cached --quiet; then
+            echo "No generated profile changes."
+          else
+            git commit -s -m "Generate 3D contribution profile"
+            git push
+          fi

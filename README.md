@@ -245,7 +245,7 @@
 
 <br />
 
-<img src="./github-contribution-grid-snake.svg" alt="GitHub contribution snake" width="100%" />
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="GitHub 3D contribution profile" width="100%" />
 
 <br />
 
